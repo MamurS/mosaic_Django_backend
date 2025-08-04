@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     
     # Third party apps
     'rest_framework',
-    'rest_framework_simplejwt',
     'corsheaders',
+    'rest_framework_simplejwt',    
     'django_filters',
 ]
 
@@ -176,8 +176,7 @@ SIMPLE_JWT = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React development server
     "http://127.0.0.1:3000",
-    # Add your React production URL here when deployed:
-    # "https://your-react-app.onrender.com",
+    "https://mosaic-react-webapp.onrender.com",
 ]
 
 # For development, allow all origins (keep your existing setting)

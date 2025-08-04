@@ -24,3 +24,15 @@ asgiref==3.7.2
 
 # Python JWT library (dependency of djangorestframework-simplejwt)
 PyJWT==2.8.0
+
+# ===== RENDER DEPLOYMENT PACKAGES =====
+# PostgreSQL adapter for Django
+psycopg2-binary==2.9.7
+# WSGI HTTP Server for Python (production server)
+gunicorn==21.2.0
+# Static file serving middleware
+whitenoise==6.5.0
+# Environment variable management
+python-decouple==3.8
+# Database URL parsing
+dj-database-url==2.1.0

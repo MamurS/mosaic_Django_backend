@@ -76,12 +76,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'insurance_project.wsgi.application'
 
-# Database
-# Uses PostgreSQL on Render, SQLite locally
+# Database - Use SQLite for deployment (temporary fix)
 DATABASES = {
-    'default': dj_database_url.parse(
-        config('DATABASE_URL', default='sqlite:///db.sqlite3')
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 # Password validation

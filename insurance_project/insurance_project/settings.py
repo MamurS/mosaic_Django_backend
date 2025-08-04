@@ -180,10 +180,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 # For development, allow all origins (keep your existing setting)
-if DEBUG:
-    CORS_ALLOW_ALL_ORIGINS = True
-else:
-    CORS_ALLOW_ALL_ORIGINS = False
+
 
 CORS_ALLOW_CREDENTIALS = True
 

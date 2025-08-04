@@ -2,9 +2,10 @@
 # exit on error
 set -o errexit
 
-# Install production dependencies from the root directory
-pip install -r requirements-prod.txt
+# Install dependencies from the root directory (one level up)
+pip install -r ../requirements-prod.txt
 
-# Run Django commands by specifying the path to manage.py
-python insurance_project/manage.py collectstatic --no-input
-python insurance_project/manage.py migrate
+# Run Django commands from the current directory ('insurance_project')
+# where manage.py is located.
+python manage.py collectstatic --no-input
+python manage.py migrate

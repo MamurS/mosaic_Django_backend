@@ -36,3 +36,6 @@ whitenoise==6.5.0
 python-decouple==3.8
 # Database URL parsing
 dj-database-url==2.1.0
+
+# Setup tools for pkg_resources (needed by simplejwt)
+setuptools==69.0.3

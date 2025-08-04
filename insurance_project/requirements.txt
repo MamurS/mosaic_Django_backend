@@ -27,7 +27,7 @@ PyJWT==2.8.0
 
 # ===== RENDER DEPLOYMENT PACKAGES =====
 # PostgreSQL adapter for Django
-psycopg[binary]==3.1.18
+psycopg2-binary==2.9.9
 # WSGI HTTP Server for Python (production server)
 gunicorn==21.2.0
 # Static file serving middleware
